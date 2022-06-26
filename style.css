@@ -1,0 +1,122 @@
+/* SuperationBn */
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  transition: all 0.2s ease;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: linear-gradient(to right, #000000, #434343);
+}
+
+.ball {
+  border-radius: 50%;
+  position: absolute;
+  animation-name: move;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.ball3 {
+  width: 500px;
+  height: 500px;
+  z-index: -1000;
+  background-color: rgba(0, 255, 255, 0.22);
+  box-shadow: 0px 0px 200px rgba(0, 255, 255, 0.531);
+}
+
+/* ANIMACIN BALL */
+@keyframes move {
+  0% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(20px);
+  }
+}
+
+/* ANIMACIN BALL */
+
+h1 {
+  color: aliceblue;
+}
+
+#container {
+  margin: 0 auto;
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.cell_content {
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+
+  background-color: rgba(240, 248, 255, 0.104);
+  border-left: 0.2px solid rgba(255, 255, 255, 0.43);
+  border-top: 0.2px solid rgba(255, 255, 255, 0.545);
+  border-right: 0.2px solid rgba(82, 80, 80, 0.545);
+  border-bottom: 0.2px solid rgba(18, 17, 17, 0.545);
+
+  border-radius: 6px;
+  box-shadow: 0px 0px 10px black;
+  backdrop-filter: blur(30px);
+}
+
+.cell {
+  width: 105px;
+  height: 130px;
+  border: 0.3rem solid rgba(255, 255, 255, 0.453);
+  color: aliceblue;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 9rem;
+  font-weight: 600;
+}
+
+#showResult {
+  color: aliceblue;
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+#btn_reset {
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  text-align: center;
+  font-size: 2rem;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+/* SuperationBn */
